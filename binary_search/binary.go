@@ -13,8 +13,6 @@ func binarySearch(array []int, target int, start int, end int) int {
 
 	if array[middle] > target {
 		return binarySearch(array, target, start, middle)
-	} else if array[middle] > target {
-		return binarySearch(array, target, start, middle)
 	} else if array[middle] < target {
 		return binarySearch(array, target, middle+1, end)
 	} else /*target == array[middle]*/ {
